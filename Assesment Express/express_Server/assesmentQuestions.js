@@ -1,4 +1,25 @@
-/*What is the purpose of babel, are most important configurations we get from webpack
+/*
+1. Create a setup for Express Web Server
+Install express and see server.js
+
+2. Configure a route name - Student
+Created student route in route folder and added configuration to server.js
+
+3. Create a express app and configure in server.js to delegate routes with - "Student"
+See server.js
+
+//4. Create API's in default setup - getStudentDetails - Pass Student 
+info like - Name, Age, Address, Session as query string
+Modified student.js to add getStudentDetails endpoint
+
+//5. Save this information received in #4  to a file named studentIfo using fs module async way
+Imprted the fs module and updated the getStudentDetails 
+
+//6. Create a setup for webpack
+Installed webpack using CLI and created and configured webpack.config.js, as well as updated
+package.json script
+
+What is the purpose of babel, are most important configurations we get from webpack
 Babel is a JavaScript compiler that transforms modern ECMAScript (ES6+) code, including 
 JSX for React applications, into backward-compatible versions for broader browser compatibility. 
 Webpack is a module bundler that efficiently compiles and organizes JavaScript files and other assets
