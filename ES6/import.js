@@ -1,4 +1,4 @@
 
-import{ age, height} from "./export.js";
-console.log(age)
-console.log(height)
+import * as details from "./export.js";
+console.log(details.age)
+console.log(details.height)

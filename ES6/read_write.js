@@ -26,10 +26,10 @@ let fs = require("fs")
 //Writing into a file using write stream
 
 let userDetails = {
-    name : "Annie",
+    name : "Julia",
     age : 21,
-    city : "Somewhere on earth ",
-    session : "MernStack"
+    city : "Miami ",
+    session : "Psych"
 }
 
 
@@ -43,10 +43,10 @@ fs.readFile('Text.json','utf8',(err, fileData)=>{
             writerStream.write(JSON.stringify([...oldData, userDetails]));
             writerStream.end();
         }else{
-            writerStream.write(JSON.stringify([{ name : "JASON",
+            writerStream.write(JSON.stringify([{ name : "Adrik",
                 age : 22,
-                city : "California ",
-                session : "MernStack"
+                city : "Orlando ",
+                session : "CS"
             }]));
             writerStream.end();
         }
@@ -78,14 +78,35 @@ fs.readFile('Text.json','utf8',(err, fileData)=>{
 //write using writestream and also read and print using readtream upon finish
 //expand it like - M-Mongo, E-Express, R-React and N-Node in JSON format
 let MernStack = {
-    acronym : 'MERN'
+    M : "Mongo",
+    E : "Express",
+    R : "React",
+    N : "Node"
 }
-Let MeanStack = {
-    
+
+let MeanStack = {
+    M : "Mongo", 
+    E : "Express",
+    A : "Angular", 
+    N : "Node"
 }
 
-
-
+fs.readFile('Acronym.json', 'utf-8',(err, data) =>
+{
+    console.log("Acronyms " + data)
+    let writerStream = fs.createWriteStream('Acronym.json', 'utf-8');
+    if(data){
+        let prevData = JSON.parse(data)
+        console.log(prevData)
+        writerStream.write(JSON.stringify([...prevData, MeanStack]));
+        writerStream.end();
+    }
+    else
+    {
+        writerStream.write(JSON.stringify([{M : "Mongo", E : "Express",R : "React",N : "Node"}]));
+        writerStream.end();
+    }
+})
 //REPL
 
 //R - Read
