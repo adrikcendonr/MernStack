@@ -5,7 +5,6 @@ function SuccessStory(props) {
     const randomValue = Math.random();
 
     // Call the callback function passed from the parent
-    // This can be triggered by an event like a button click or other logic
     const handleSendValue = () => {
         props.onValueChange(randomValue);
     };
