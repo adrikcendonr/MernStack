@@ -1,12 +1,11 @@
 //1. what is virtual dom - optional
 
-/*The Virtual DOM is a concept primarily used in React to enhance performance and the developer experience.
+/*The Virtual DOM is  used in React to enhance performance and the developer experience.
 It's an in-memory replica of the actual Document Object Model (DOM). When changes in a React application occur,
-they are first made to the Virtual DOM. React then employs an algorithm to compare the updated Virtual DOM with
-its previous state, identifying the minimum number of changes needed. This process allows for efficient,
+they are first made to the Virtual DOM. React uses an algorithm to compare the updated Virtual DOM with
+its previous state, identifying the minimum number of changes needed. This process helps us for efficient,
 batched updates to the actual DOM, significantly reducing direct manipulation and improving performance. 
-The Virtual DOM thus offers a more efficient way of updating the user interface in web applications, making it a 
-key element in modern web development.
+Because of this, it offers a more efficient way of updating the user interface in web applications.
 */
 
 //2. how react renders dom in conservative manner - optional
